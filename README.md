@@ -2,7 +2,7 @@
 > Cross platform Brooklyn Nine Nine sounds app.
 
 ## Features
-- Play sounds of Brooklyn Nine-Nine characters (300+ sounds of ALL major characters)
+- Play dialogs of Brooklyn Nine-Nine characters (300+ sounds of ALL major characters)
 - Favorites sounds
 - Share sounds (as MP3 files)
 - Change theme (light, dark, and black theme)
