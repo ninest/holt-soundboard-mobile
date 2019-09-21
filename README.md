@@ -12,10 +12,14 @@
 
 ## Built with
 - Flutter
+- HiveDB
+- Provider state management
 
 ## App store links
 - [Android](https://play.google.com/store/apps/details?id=com.themindstorm.holt_soundboard&hl=en_US)
 - iOS (not out yet)
+
+On Android, you can directly download and install the APK from here: [Releases](https://github.com/holt-soundboard/holt-soundboard-mobile/releases). Be sure to download the latest verion.
 
 If you want to use the app on an iOS or desktop device, consider using the [website](https://holt-soundboard.github.io).
 
