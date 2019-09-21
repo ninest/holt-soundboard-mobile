@@ -1,0 +1,30 @@
+Categories:
+  - Games
+License: AGPL-3.0-only
+WebSite: https://holt-soundboard.github.io
+SourceCode: https://github.com/holt-soundboard/holt-soundboard-mobile
+IssueTracker: https://github.com/holt-soundboard/holt-soundboard-mobile/issues
+
+AutoName: Holt Soundboard
+Description: Sounds of all characters from the NBC show Brooklyn Nine-Nine
+
+RepoType: git
+Repo: https://github.com/holt-soundboard/holt-soundboard-mobile
+
+Builds:
+  - versionName: 2.0.9
+    versionCode: 11
+    commit: 2.0.9
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.9.7
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.9
+CurrentVersionCode: 11

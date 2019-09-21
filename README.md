@@ -8,7 +8,8 @@
 - Change theme (light, dark, and black theme)
 
 ## Images
-![iOS image](https://i.imgur.com/nEtHzuR.png)
+![Feature image](https://i.imgur.com/SQnzkkG.png)
+![Image group](https://i.imgur.com/4MWtkwu.png)
 
 ## Built with
 - Flutter
