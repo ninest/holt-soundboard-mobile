@@ -14,7 +14,7 @@
 ## Built with
 - Flutter
 - HiveDB
-- Provider state management
+- Provider (state management)
 
 ## App store links
 - [Android](https://play.google.com/store/apps/details?id=com.themindstorm.holt_soundboard&hl=en_US)
