@@ -24,11 +24,12 @@ for char, lst in sounds.items():
 # print(sounds)
 # print(f"static List<String> characters = {[key for key in sounds.keys()]};", end="\n")
 
-# print( "static List<List> sounds = [")
-# for char, lst in sounds.items():
-#   print(f"\t{lst}", end=",\n")
-# print("];")
-
+print( "static Map sounds = {")
 for char, lst in sounds.items():
-  for sound in lst:
-    print(f"- assets/sounds/{char}/{sound}")
+  print(f"\t'{char}': {lst}", end=",\n")
+print("};")
+
+# for char, lst in sounds.items():
+#   print(f"- assets/sounds/{char}/")
+#   for sound in lst:
+#     print(f"- assets/sounds/{char}/{sound}")
