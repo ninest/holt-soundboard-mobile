@@ -5,10 +5,13 @@ import 'package:holt_soundboard/widgets/appbars.dart';
 import 'package:holt_soundboard/widgets/sounds_grid.dart';
 
 import 'package:holt_soundboard/styles/constants.dart';
+import 'package:provider/provider.dart';
 
 class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    final SoundsProvider soundsProvider = Provider.of<SoundsProvider>(context);
 
     List favorites = SoundsProvider.getFavorites();
 

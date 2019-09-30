@@ -45,12 +45,16 @@ class BottomSheets {
     var favoritesTile;
 
     if (favorites.contains(soundString)) {
-      favoritesTile = bottomSheetTile(context, Icons.favorite, "Remove from favorites", () =>
-        SoundsProvider.removeFromFavorites(context, character, sound)
+      favoritesTile = bottomSheetTile(context, Icons.favorite, "Remove from favorites", () {
+          final SoundsProvider soundsProvider= Provider.of<SoundsProvider>(context);
+          soundsProvider.removeFromFavorites(context, character, sound);
+        }
       );
     } else {
-      favoritesTile = bottomSheetTile(context, Icons.favorite_border, "Add to favorites", () =>
-        SoundsProvider.addToFavorites(context, character, sound)
+      favoritesTile = bottomSheetTile(context, Icons.favorite_border, "Add to favorites", () {
+          final SoundsProvider soundsProvider= Provider.of<SoundsProvider>(context);
+          soundsProvider.addToFavorites(context, character, sound);
+        }
       );
     }
 

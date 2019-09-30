@@ -19,7 +19,7 @@ class SoundsProvider extends ChangeNotifier {
     audioPlayer.play(url);
   }
 
-  static addToFavorites(BuildContext context, String character, String sound) async {
+  addToFavorites(BuildContext context, String character, String sound) async {
     var favoritesBox = Hive.box('favorites');
 
     List favorites = favoritesBox.get('allFavorites') ?? [];
@@ -40,9 +40,11 @@ class SoundsProvider extends ChangeNotifier {
     }
 
     Navigator.of(context).pop();
+
+    notifyListeners();
   }
 
-  static removeFromFavorites(BuildContext context, String character, String sound) async {
+  removeFromFavorites(BuildContext context, String character, String sound) async {
     var favoritesBox = Hive.box('favorites');
     List favorites = favoritesBox.get('allFavorites') ?? [];
 
@@ -58,6 +60,8 @@ class SoundsProvider extends ChangeNotifier {
     }
 
     Navigator.of(context).pop();
+
+    notifyListeners();
   }
 
   static getFavorites() {
