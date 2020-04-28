@@ -1,4 +1,4 @@
-# [Holt Soundboard](https://play.google.com/store/apps/details?id=com.themindstorm.holt_soundboard&hl=en_US)
+# Holt Soundboard
 > Cross platform Brooklyn Nine Nine sounds app.
 
 ## Features
@@ -17,7 +17,7 @@
 - Provider (state management)
 
 ## App store links
-- [Android](https://play.google.com/store/apps/details?id=com.themindstorm.holt_soundboard&hl=en_US)
+- [Android](https://play.google.com/store/apps/details?id=com.themindstorm.holt_soundboard&hl=en_US): the app has been **removed** because it is a violation of coprights
 - iOS (not out yet)
 
 On Android, you can directly download and install the APK from here: [Releases](https://github.com/holt-soundboard/holt-soundboard-mobile/releases). Be sure to download the latest verion.
